@@ -3,5 +3,5 @@
 source ./bin/scripts.sh
 
 npm ci
-node ./src/index.js ../
+node ./src/index.js ../../
 check $?
