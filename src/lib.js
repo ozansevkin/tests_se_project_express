@@ -51,7 +51,7 @@ const checkStructure = (a, b) => {
   },
   checkEslintExecuting = (a) => {
     const { stdout: b, code: c } = shell.exec(
-      'npx eslint --quiet --ignore-pattern "tests-13-public/*" .',
+      'npx eslint --quiet --ignore-pattern "tests_se_project_express/*" .',
       { silent: !0, async: !1, cwd: a }
     );
     return 0 === c ? [] : [{ id: "eslint", values: { errors: b } }];
